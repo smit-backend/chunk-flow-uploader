@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/chunk-flow-uploader",
+    "description": "Resumable, chunked mobile file upload handler with MD5 validation and automated server disk assembly.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\ChunkFlow\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\ChunkFlow\\PackageServiceProvider"
+            ]
+        }
+    }
+}
