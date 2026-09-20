@@ -4,13 +4,17 @@ declare(strict_types=1);
 
 namespace SmitBackend\ChunkFlow;
 
+use SmitBackend\ChunkFlow\Contracts\ChunkAssemblerInterface;
+
 class PackageServiceProvider
 {
     public function register(): void
     {
+        // Bind core service singleton
     }
 
     public function boot(): void
     {
+        // Boot routes and configuration publishing
     }
 }
